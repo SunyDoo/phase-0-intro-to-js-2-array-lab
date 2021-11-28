@@ -5,33 +5,33 @@ function destructivelyAppendCat() {
 }
 
 function destructivelyPrependCat() {
-    cats.unshift("Bob");
+    cats.unshift("Bob")
 }
 
 function destructivelyRemoveLastCat() {
-    cats.pop();
+    cats.pop()
 }
 
 function destructivelyRemoveFirstCat() {
-    cats.shift();
+    cats.shift()
 }
 
 function appendCat() {
-    let newCats=([...cats, "Broom"])
+    let newCats = [...cats , "Broom"]
     return newCats;
 }
-    
+
 function prependCat() {
-    let newCats=(["Arnold", ...cats])
+    let newCats = ["Arnold" , ...cats]
     return newCats;
 }
 
 function removeLastCat() {
-    let newCats = cats.slice(0,-1);
+    let newCats = cats.slice(0,-1)
     return newCats;
 }
 
 function removeFirstCat() {
-    let newCats = cats.slice(1);
+    let newCats = cats.slice(1)
     return newCats;
 }
